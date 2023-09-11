@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=0;y=0;op="";
+           function hiclear()
+           {
+            document.getElementById("txtno").value="";
+           }
+           function hi1()
+           {
+            document.getElementById("txtno").value+="1";
+           }
+           function hi2()
+           {
+            document.getElementById("txtno").value+="2";
+           }
+           function hi3()
+           {
+            document.getElementById("txtno").value+="3";
+           }
+           function hi4()
+           {
+            document.getElementById("txtno").value+="4";
+           }
+           function hi5()
+           {
+            document.getElementById("txtno").value+="5";
+           }
+           function hi6()
+           {
+            document.getElementById("txtno").value+="6";
+           }
+           function hi7()
+           {
+            document.getElementById("txtno").value+="7";
+           }
+           function hi8()
+           {
+            document.getElementById("txtno").value+="8";
+           }
+           function hi9()
+           {
+            document.getElementById("txtno").value+="9";
+           }
+           function hi0()
+           {
+            document.getElementById("txtno").value+="0";
+           }
+           function hiadd()
+           {
+            
+            x= parseInt(document.getElementById("txtno").value);
+           document.getElementById("txtno").value="";
+           op="+";
+          
+           }
+           function hians()
+           {
+             y=parseInt(document.getElementById("txtno").value);
+            if(op=="+")
+            document.getElementById("txtno").value=x+y;
+
+           }
+           function hisub(){
+          x= parseInt(document.getElementById("txtno").value);
+           document.getElementById("txtno").value="";
+           op="-";
+
+}
+function himul()
+{
+           x= parseInt(document.getElementById("txtno").value);
+           document.getElementById("txtno").value="";
+           op="*";
+}
+function hidiv()
+{
+           x= parseInt(document.getElementById("txtno").value);
+           document.getElementById("txtno").value="";
+           op="/";
+}
+         </script>
+    <table style="background-color:green;color: #000;">
+        <tr>
+            <td colspan="4"> <input type="text" id ="txtno"> </td>
+        </tr>
+
+        <tr>
+            <td><input type="button" id ="btn1" value="1" onclick="hi1();"></td>
+            <td><input type="button" id ="btn2" value="2" onclick="hi2();"> </td>
+            <td><input type="button" id ="btn3" value="3"  onclick="hi3();"></td> 
+            <td><input type="button" id ="btn4" value="4" onclick="hi4();"></td>
+         </tr>
+
+         <tr>
+            <td><input type="button" id ="btn5" value="5" onclick="hi5();"></td>
+            <td><input type="button" id ="btn6" value="6"  onclick="hi6();"></td>
+            <td><input type="button" id ="btn7" value="7"  onclick="hi7();"></td>
+            <td><input type="button" id ="btn8" value="8"  onclick="hi8();"></td>
+            
+        </tr>
+
+        <tr>
+            <td><input type="button" id ="btn9" value="9"  onclick="hi9();"></td>
+            <td><input type="button" id ="btno" value="0"  onclick="hi0();"></td> 
+            <td><input type="button" id ="btn+" value="+" onclick="hiadd();"></td>
+            <td><input type="button" id ="btn-" value="-" onclick="hisub();"></td>
+         </tr>
+         <tr>
+            <td><input type="button" id ="btn*" value="*"onclick="himul();"></td>
+            <td><input type="button" id ="btn/" value="/"onclick="hidiv();"></td>
+            <td><input type="button" id ="btn=" value="=" onclick="hians();;"></td>
+            <td><input type="button" id ="btn C" value="C" onclick="hiclear();"></td>
+         </tr>
+        </tr>
+    </table>
+    
+</body>
+</html>

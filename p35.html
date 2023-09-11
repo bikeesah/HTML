@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function hisq ()
+        {
+        let a=document.getElementById("txtno").value;
+        document.getElementById("txtans").value=a*a;
+        }
+
+        function hicub ()
+        {
+        let a=document.getElementById("txtno").value;
+        document.getElementById("txtans").value=a*a*a;
+        }
+        </script>
+    <form>
+        No:   <input type="text" id="textno"> <br>
+        <input type="radio" id="optr" name="a" onclick="hisq();">square
+        <input type="radio" id="optg" name="a" onclick="hiscub();">cube<br>
+        Ans <input type="text " id="txtans">
+    </form>
+</body>
+</html>

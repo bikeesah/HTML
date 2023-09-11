@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hiadd() 
+        {
+           let a=parseInt(document.getElementById("txtno.1").value);
+           let b=parseInt(document.getElementById("txtno.2").value);
+            document.getElementById("txtants").value=a+b; 
+        }
+        function hisub() 
+        {
+           let a=parseInt(document.getElementById("txtno.1").value);
+           let b=parseInt(document.getElementById("txtno.2").value);
+            document.getElementById("txtants").value=a-b; 
+        }
+        function himul() 
+        {
+           let a=parseInt(document.getElementById("txtno.1").value);
+           let b=parseInt(document.getElementById("txtno.2").value);
+            document.getElementById("txtants").value=a*b; 
+        }
+        function hidiv() 
+        {
+           let a=parseInt(document.getElementById("txtno.1").value);
+           let b=parseInt(document.getElementById("txtno.2").value);
+            document.getElementById("txtants").value=a/b; 
+        }
+        
+    </script>
+    <form>
+        <table>
+            <tr>
+            <td>No.1</td>
+            <td><input type="number" id ="txtno.1"></td>
+        </tr>
+
+
+        <td>No.2</td>
+            <td><input type="number" id ="txtno.2"></td>
+        </tr>
+
+
+        <tr>
+            <td><input type ="button"value="Addition " onclick="hiadd()"> </td>
+        </tr>
+         <tr>
+            <td><input type ="button"value="subtraction" onclick="hisub()"> </td>
+        </tr>
+        <tr>
+            <td><input type ="button"value="multiplication " onclick="himul()"> </td>
+        </tr>
+        <tr>
+            <td><input type ="button"value="division " onclick="hidiv()"> </td>
+        </tr>
+
+
+
+
+        <tr>
+        
+                <td>Ans</td>
+                <td><input type ="text" id ="txtants"> </td>
+        
+        </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hians()
+        {
+            let a= parseInt(document.getElementById("txtno").value);
+            let str="";
+            for(i=1;i<=10;i++)
+            {
+                str+=a+"X"+i+"="+(a*i)+"\n";
+
+            }
+            document.getElementById("txtans").value=str;
+        }
+
+    </script>
+    <form>
+        NO:<input type="text" id="txtno"><br>
+        <input type="button" value="click me" onclick="hians()"><br>
+        <textarea id="txtans"></textarea>
+    </form>
+</body>
+</html>
